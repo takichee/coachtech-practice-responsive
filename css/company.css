@@ -1,0 +1,17 @@
+.company {
+  margin: 0 8vw;
+  margin-bottom: 15vh;
+}
+.about-company tr {
+  border-top: 1px solid #000;
+}
+.about-company th {
+  padding: 4vh 0;
+  width: 24vw;
+}
+.about-company td {
+  width: 60vw;
+}
+.about-company tr:last-child {
+  border-bottom: 1px solid #000;
+}

@@ -1,0 +1,36 @@
+.service-item {
+  margin: 5vh 8vw;
+  padding-top: 5vh;
+  border-top: 1px solid #000;
+}
+.service4 {
+  padding-bottom: 5vh;
+  margin-bottom: 10vh;
+  border-bottom: 1px solid #000;
+}
+.service-item__image {
+  width: 100%;
+}
+.service-item__ttl {
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+@media (min-width: 769px) {
+  .service-item {
+    position: relative;
+    display: flex;
+  }
+  .service-item__image {
+    width: 40%;
+  }
+  .service-item__ttl {
+    position: absolute;
+    top: 5vh;
+    left: 42%;
+  }
+  .service-item__descr {
+    position: absolute;
+    top: 12vh;
+    left: 42%;
+  }
+}

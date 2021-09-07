@@ -1,0 +1,16 @@
+.news {
+  padding: 0 8vw 10vh 8vw;
+}
+.news-list__item {
+  list-style-type: none;
+  border: 1px solid #000;
+  padding: 3vh 3vw;
+  margin-bottom: 2vh;
+}
+.news-list__item a {
+  color: black;
+}
+.news-list__item__ttl {
+  font-weight: bold;
+  margin-left: 2vw;
+}

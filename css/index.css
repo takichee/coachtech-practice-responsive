@@ -1,35 +1,8 @@
-/*
-header, footer, main, h1, div, nav, li, a, img {
-  border: .5px dashed #888;
-}
-*/
-
-/* Common CSS */
-a {
-  text-decoration: none;
-  color: blue;
-}
-a:hover {
-  opacity: .7;
-  transition: .3s;
-}
-p {
-  font-size: 18px;
-}
-h1 {
-  font-size: 35px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 20px;
-}
+/* MAIN */
 .main-container {
   padding: 0 8vw;
 }
 
-/* MAIN */
 /* Concept */
 .concept {
   width: 100vw;
@@ -123,99 +96,7 @@ h3 {
   text-align: center;
 }
 
-/* Contact */
-.contact {
-  padding-top: 15vh;
-  background-color: rgb(219, 219, 219);
-}
-.contact__ttl {
-  text-align: center;
-}
-.contact__descr {
-  margin-top: 20px;
-  text-align: center;
-}
-
-/* Footer */
-.footer {
-  background-color: #222;
-  color: #fff;
-  font-size: 12px;
-}
-.footer__nav__list__item a {
-  color: #fff;
-}
-
 @media (max-width: 768px) {
-  /* HEADER */
-  .header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-  .header-menu {
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    padding-bottom: 10px;
-    background-color: #fff;
-  }
-  .header-logo {
-    height: 25px;
-    margin: 12.5px 5vw;
-  }
-  .nav-button {
-    height: 25px;
-    width: 38px;
-    margin: 12.5px 5vw;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    z-index: 1;
-  }
-  .nav-button span {
-    width: inherit;
-    height: 4px;
-    background: black;
-    transition: .3s;
-  }
-  .nav-button--cross span {
-    position: absolute;
-  }
-  .nav-button--cross .nav-button--top {
-    top: 10.5px;
-    transform: rotate(45deg);
-  }
-  .nav-button--cross .nav-button--middle {
-    opacity: 0;
-  }
-  .nav-button--cross .nav-button--bottom {
-    top: 10.5px;
-    transform: rotate(-45deg);
-  }
-  .nav-menu {
-    height: 100vh;
-    width: 100vw;
-    background: #fff;
-    position: absolute;
-    top: 0;
-    left: -100%;
-    padding-top: 100px;
-    transition: .3s;
-  }
-  .nav-menu__item {
-    width: 100%;
-    text-align: center;
-    padding-top: 35px;
-  }
-  .nav-menu__item a {
-    font-size: 25px;
-  }
-  .in {
-    transform: translateX(100vw);
-  }
   /* MAIN */
   /* Concept */
   .concept__ttl {
@@ -274,44 +155,8 @@ h3 {
     padding-top: 5px;
     font-size: 12px;
   }
-  /* Footer */
-  .footer {
-    padding-top: 5vh;
-    padding-bottom: 8vh;
-    text-align: center;
-  }
-  .footer__nav__list__item {
-    margin-top: 3vh;
-  }
 }
 @media (min-width: 769px) {
-  /* HEADER */
-  .header {
-    height: 60px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: 0 20px;
-  }
-  .header-logo {
-    height: 30px;
-  }
-  .nav-menu {
-    display: flex;
-    font-size: 30px;
-  }
-  .nav-menu__item {
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 30px;
-  }
-  .nav-menu__item a {
-    color: #000;
-  }
   /* MAIN */
   /* Concept */
   .concept__ttl {
@@ -399,27 +244,5 @@ h3 {
   /* Links */
   .links__container {
     margin-top: 15vh;
-  }
-  /* Contact */
-  .contact__descr {
-    margin-bottom: 3vh;
-  }
-  .contact__button {
-    padding-bottom: 15vh
-  }
-  /* Footer */
-  .footer {
-    padding: 3vh 10vw;
-    display: flex;
-    justify-content: space-between;
-  }
-  .footer__nav__list {
-    display: flex;
-    list-style-type: none;
-  }
-  .footer__nav__list__item:not(:first-child) {
-    margin-left: 1vw;
-    padding-left: 1vw;
-    border-left: 1px solid #fff;
   }
 }
