@@ -1,0 +1,343 @@
+/*
+header, footer, main, h1, div, nav, li, a, img {
+  border: .5px dashed #888;
+}
+*/
+
+/* Common CSS */
+a {
+  text-decoration: none;
+  color: blue;
+}
+a:hover {
+  opacity: .7;
+  transition: .3s;
+}
+p {
+  font-size: 18px;
+}
+h1 {
+  font-size: 35px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 20px;
+}
+.main-container {
+  padding: 0 8vw;
+}
+
+/* HEADER */
+/* Full-width Side Navigation & Cross Button */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+.header-logo {
+  height: 25px;
+  margin: 12.5px 5vw;
+}
+.nav-button {
+  height: 25px;
+  width: 38px;
+  margin: 12.5px 5vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1;
+}
+.nav-button span {
+  width: inherit;
+  height: 4px;
+  background: black;
+  transition: .3s;
+}
+
+.nav-button--cross span {
+  position: absolute;
+}
+.nav-button--cross .nav-button--top {
+  top: 10.5px;
+  transform: rotate(45deg);
+}
+.nav-button--cross .nav-button--middle {
+  opacity: 0;
+}
+.nav-button--cross .nav-button--bottom {
+  top: 10.5px;
+  transform: rotate(-45deg);
+}
+.nav-menu {
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  padding-top: 100px;
+  transition: .3s;
+}
+.nav-menu__item {
+  width: 100%;
+  text-align: center;
+  padding-top: 35px;
+}
+.nav-menu__item a {
+  font-size: 25px;
+}
+.in {
+  transform: translateX(100vw);
+}
+
+/* MAIN */
+/* Concept */
+.concept {
+  width: 100vw;
+  background: url(../img/mv.png) center/cover no-repeat;
+  text-align: center;
+}
+.concept__ttl {
+  color: #fff;
+  padding: 50vh 6vw 0 6vw;
+}
+.concept__sub-ttl {
+  margin-top: 40px;
+  color: #fff;
+  font-size: 20px;
+  padding-bottom: 50vh;
+}
+
+/* Vision */
+.vision {
+  background-color: #222;
+  color: white;
+}
+.vision__ttl {
+  padding-top: 15vh;
+  margin-bottom: 5vh;
+}
+.vision__text {
+  line-height: 1.5em;
+  padding-bottom: 15vh;
+}
+
+/* Services */
+.services__ttl {
+  padding-top: 15vh;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.services__section {
+  margin-bottom: 40px;
+}
+.services__section__image {
+  width: 100%;
+}
+.services__section__ttl {
+  margin-top: 10px;
+}
+.services__section__descr {
+  margin-top: 10px;
+}
+.services__button--link {
+  background-color: rgb(196, 3, 3);
+  width: 100%;
+  border: none;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.services__button {
+  margin-top: 12vh;
+  padding: 0 10vw;
+  padding-bottom: 15vh;
+}
+
+/* News */
+.news {
+  background-color: #222;
+}
+.news__ttl {
+  padding: 5px 0;
+  color: #fff;
+}
+.news__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15vh;
+  margin-bottom: 30px;
+
+}
+.news__button--link {
+  background-color: rgb(196, 3, 3);
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+.news__list__item {
+  display: flex;
+  color: black;
+  padding: 25px 0 25px 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+.news__list__item--date {
+  font-size: 12px;
+}
+.news__list__item--content {
+  font-size: 14px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+.news__list {
+  padding-bottom: 15vh;
+}
+
+/* Blog */
+.blog__ttl {
+  padding-top: 15vh;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.blog__list__item {
+  margin-bottom: 40px;
+}
+.blog__list__item__image {
+  width: 100%;
+}
+.blog__list__item__ttl a {
+  margin-top: 10px;
+  font-size: 14px;
+  color: black;
+}
+.blog__list__item__date {
+  padding-top: 5px;
+  font-size: 12px;
+}
+
+/* Links */
+.links__container {
+  display: flex;
+  padding-bottom: 15vh;
+}
+.links__container a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+}
+.links__container--red {
+  width: 50vw;
+  background-color: rgb(196, 3, 3);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.links__container--black {
+  width: 50vw;
+  background-color: #000;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+/* Contact */
+.contact {
+  padding-top: 15vh;
+  background-color: rgb(219, 219, 219);
+}
+.contact__ttl {
+  text-align: center;
+}
+.contact__descr {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding-top: 5vh;
+  padding-bottom: 8vh;
+  text-align: center;
+  font-size: 12px;
+}
+.footer__nav__list__item {
+  margin-top: 3vh;
+}
+.footer__nav__list__item a {
+  color: #fff;
+}
+
+@media screen and (min-width: 769px){
+  /* HEADER */
+  /* Sticky Navigation Menu */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .header-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding-bottom: 10px;
+    background-color: #fff;
+  }
+  .header-logo {
+    height: 25px;
+    margin: 12.5px 5vw;
+  }
+  .nav-button {
+    height: 25px;
+    width: 38px;
+    margin: 12.5px 5vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .nav-button span {
+    width: inherit;
+    height: 4px;
+    background: black;
+    transition: .3s;
+  }
+  .nav-menu {
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    padding-top: 100px;
+    transition: .3s;
+  }
+  .nav-menu__item {
+    width: 100%;
+    text-align: center;
+    padding-top: 35px;
+  }
+  .nav-menu__item a {
+    font-size: 25px;
+  }
+  .in {
+    transform: translateX(100vw);
+  }
+}
